@@ -1,7 +1,4 @@
-# Few-LTOD: Few-shot Learning in End-to-end Task-Oriented Dialogue Systems via Instruction Tuning with Small Open-Source Large Language Models
-
-This is code and data for our paper [LFewTOD]()
-
+# Spec-TOD: A specialized Instruction-Tuned LLM Framework for Eficient Task-Oriented Dialogue System [Link paper](https://arxiv.org/abs/2507.04841)
 ## Data Prepreration
 We construct data for fintuning and evaluation base on previous works: [FncTOD](https://github.com/facebookresearch/FnCTOD/tree/main), [UBAR](https://github.com/TonyNemo/UBAR-MultiWOZ). Refer to [FnCTOD](https://github.com/facebookresearch/FnCTOD/tree/main) for more details. 
 ### Collect data from different datasets.
@@ -9,7 +6,7 @@ We construct data for fintuning and evaluation base on previous works: [FncTOD](
 cd sh_folders
 sh processing-sgd.sh
 sh prompting-sgd.sh
-... 
+... more dataset
 sh create_finetunedata.sh
 ```
 ### Convert multiwoz dataset to instruction finetuning format
@@ -76,3 +73,12 @@ We appreciate their open-sourcing such high-quality code, which is very helpful 
 ## License
 
 ## Citation
+@misc{nguyen2025spectodspecializedinstructiontunedllm,
+      title={Spec-TOD: A Specialized Instruction-Tuned LLM Framework for Efficient Task-Oriented Dialogue Systems}, 
+      author={Quang-Vinh Nguyen and Quang-Chieu Nguyen and Hoang Pham and Khac-Hoai Nam Bui},
+      year={2025},
+      eprint={2507.04841},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.04841}, 
+}
